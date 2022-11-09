@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 #-------------------------------------------------------------------------------
 
-def plot_testcase():
+def plot_testcase_forcing():
 
     cm = 1/2.54  # centimeters in inches
     plt.rc('mathtext',fontset="stix")
@@ -223,4 +223,4 @@ def plot_testcase():
 
 if __name__ == "__main__":
 
-    plot_testcase()
+    plot_testcase_forcing()
