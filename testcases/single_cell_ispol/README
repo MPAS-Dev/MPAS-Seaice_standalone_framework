@@ -1,0 +1,22 @@
+# Set DOMAINS DIRECTORY for ISPOL (67.9 S, -54.4 E)
+export  MPAS_SEAICE_DOMAINS_DIR="/lcrc/group/e3sm/public_html/mpas_standalonedata/mpas-seaice/domains"
+
+# Set location of executable
+export MPAS_SEAICE_EXECUTABLE=""
+
+# Set location of run_testcase.py (optional)
+export MPAS_SEAICE_TESTCASES_RUN_COMMAND=""
+
+# build the model
+cd E3SM/components/mpas-seaice/
+make [options]
+
+# run the test case
+cd E3SM/components/mpas-seaice/testing_and_setup/testcases/single_cell_ispol
+python run_testcase.py
+
+# or the job_script.sh can also be modified and submitted
+sbatch ./job_script.sh
+
+# examine the output plot
+*.png
