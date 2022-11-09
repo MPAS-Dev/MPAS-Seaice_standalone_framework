@@ -1,5 +1,6 @@
 import os
 from plot_testcase import plot_testcase
+from plot_testcase_forcing import plot_testcase_forcing
 
 #-------------------------------------------------------------------------------
 
